@@ -6,6 +6,12 @@
 		wp_enqueue_style("google_fonts", "//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i");
 	};
 	add_action("wp_enqueue_scripts", "university_files");
+	
+	function university_features() {
+		add_theme_support('title-tag');
+	};
+	add_action('after_setup_theme', 'university_features');
+
 ?>
 
-<!-- TODO replace microtime in finished with a version number -->
+<!-- TODO replace microtime in finished with a version number microtime causes a reload instead of cache-->

@@ -4,7 +4,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<h1><?php bloginfo("name"); ?></h1>
 		<header class="site-header">
 			<div class="container">
 				<h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
